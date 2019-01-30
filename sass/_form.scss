@@ -1,0 +1,17 @@
+select {
+    width: 200px;
+    padding-top: 100%;
+    margin: 35%;
+    text-align: center;
+
+    @include tablet {
+       
+        align-self: start;
+        
+    }
+    @include desktop {
+        
+        align-self: start;  
+    }
+}
+

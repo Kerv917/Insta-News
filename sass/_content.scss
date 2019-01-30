@@ -1,0 +1,97 @@
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../../fonts/OpenSans-Light.woff2') format('woff2'),
+        url('../../fonts/OpenSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    color: white;
+}
+
+#option {
+    display: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    flex: 1;
+    padding: 100px;
+    height: 100%;
+}
+
+
+.nyt-logo {
+    display: block;
+    padding: 140px;
+    margin: 140px;
+
+@include tablet {
+        flex-direction: row;
+        height: 100px;
+        padding-right: 10px;
+        width: 100%;
+}
+
+@include desktop {
+    height: 260px;
+    width: 260px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+}
+
+/* Footer */
+footer {
+    position: relative;
+    height: 10%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 2px solid black;
+}
+
+#copyright-insta {
+    font-family: "Open Sans";
+    text-align: center;
+    font-weight: 16px;
+    color: white;
+    font-size: 16px;
+    padding-top: 16px;
+}
+
+.articlecontainer {
+
+    img {
+     @include image;   
+    }
+
+}
+
+
+
+
+
+
+
+/* --------*/
+   
+
+//   @media screen and (min-width: $desktop) {
+//     justify-content: flex-start;
+//   }

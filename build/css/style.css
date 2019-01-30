@@ -1,0 +1,150 @@
+/* Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: left; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background-color: black;
+  font-family: "Open Sans";
+  padding: 0; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../../fonts/OpenSans-Light.woff2") format("woff2"), url("../../fonts/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+html {
+  height: 100%; }
+
+body {
+  color: white; }
+
+#option {
+  display: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/* Header */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 100px;
+  height: 100%; }
+
+.nyt-logo {
+  display: block;
+  padding: 140px;
+  margin: 140px; }
+  @media (min-width: 600px) {
+    .nyt-logo {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      height: 100px;
+      padding-right: 10px;
+      width: 100%; } }
+  @media (min-width: 1240px) {
+    .nyt-logo {
+      height: 260px;
+      width: 260px;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; } }
+
+/* Footer */
+footer {
+  position: relative;
+  height: 10%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top: 2px solid black; }
+
+#copyright-insta {
+  font-family: "Open Sans";
+  text-align: center;
+  font-weight: 16px;
+  color: white;
+  font-size: 16px;
+  padding-top: 16px; }
+
+.articlecontainer img {
+  width: 100%;
+  max-height: 5rem; }
+
+/* --------*/
+select {
+  width: 200px;
+  padding-top: 100%;
+  margin: 35%;
+  text-align: center; }
+  @media (min-width: 600px) {
+    select {
+      -ms-flex-item-align: start;
+          align-self: start; } }
+  @media (min-width: 1240px) {
+    select {
+      -ms-flex-item-align: start;
+          align-self: start; } }
