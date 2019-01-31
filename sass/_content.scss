@@ -13,12 +13,13 @@ html {
 
 body {
     color: white;
+    font-family: "Open Sans";
 }
 
 #option {
     display: flex-start;
     flex-direction: row;
-    align-items: center;
+    align-items: left;
 }
 
 /* Header */
@@ -37,14 +38,14 @@ header {
 
 .nyt-logo {
     display: block;
-    padding: 140px;
-    margin: 140px;
+    padding: 150px;
+    margin: 150px;
 
 @include tablet {
-        flex-direction: row;
-        height: 100px;
-        padding-right: 10px;
-        width: 100%;
+    flex-direction: row;
+    height: 100px;
+    padding-right: 10px;
+    width: 100%;
 }
 
 @include desktop {
@@ -76,7 +77,13 @@ footer {
 }
 
 .articlecontainer {
-
+    display: flex;
+    flex-direction: flex-end;
+    position: relative;
+    align-items: flex-start;
+    height: 25rem;
+    background-size: cover;
+        
     img {
      @include image;   
     }

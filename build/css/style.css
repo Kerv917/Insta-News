@@ -130,9 +130,18 @@ footer {
   font-size: 16px;
   padding-top: 16px; }
 
-.articlecontainer img {
-  width: 100%;
-  max-height: 5rem; }
+.articlecontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 400px;
+  background-size: cover; }
+  .articlecontainer img {
+    width: 50rem;
+    max-height: 100%; }
 
 /* --------*/
 select {
