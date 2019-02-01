@@ -57,6 +57,29 @@ header {
 }
 }
 
+.news-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+    a {
+        display: flex;
+        background: {
+            size: cover;
+            position: center;
+            repeat: no-repeat;
+        }
+        width: 100%;
+        height: 400px;
+        margin: 0;
+        text-decoration: none;
+
+        .articleContainer {
+            display: flex;
+        }
+    }
+}
+
 /* Footer */
 footer {
     position: relative;
@@ -76,19 +99,7 @@ footer {
     padding-top: 16px;
 }
 
-.articlecontainer {
-    display: flex;
-    flex-direction: flex-end;
-    position: relative;
-    align-items: flex-start;
-    height: 25rem;
-    background-size: cover;
-        
-    img {
-     @include image;   
-    }
 
-}
 
 
 
